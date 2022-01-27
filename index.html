@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>camp.in</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <img src="./assets/images/logo.svg" alt="camp.in" />
+    </header>
+    <main class="container">
+      <h1 class="style-texts">Faça seu login</h1>
+      <p class="style-texts">Entre com suas informações de cadastro.</p>
+
+      <form class="style-texts">
+        <label for="email" class="email">
+          E-mail:
+          <br />
+          <input type="email" placeholder="Digite seu e-mail" class="email" />
+        </label>
+        <br />
+        <label for="password">
+          Senha:
+          <br />
+          <input type="password" placeholder="Digite sua senha" class="pass" />
+        </label>
+        <br />
+        <input type="checkbox" name="remember-me" id="" /> Lembre-se
+        <p>Esqueci minha senha</p>
+
+        <button type="submit" class="button">ENTRAR</button>
+        <p class="text-end">Não tem uma conta? <strong>Registre-se</strong></p>
+      </form>
+    </main>
+  </body>
+</html>

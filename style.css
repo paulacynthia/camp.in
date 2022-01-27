@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+  --button-color: rgba(71, 52, 4, 1);
+}
+
+.container {
+  margin-left: 20px;
+}
+
+body {
+  background-color: var(--background);
+}
+
+header {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 27px;
+}
+
+.style-texts {
+  color: var(--text-title);
+}
+
+.pass,
+.email {
+  margin-bottom: 20px;
+  width: 20rem;
+  height: 2rem;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: var(--button-color);
+  border: none;
+  border-radius: 4px;
+  width: 20rem;
+  height: 3rem;
+}
+
+.text-end {
+  margin-top: 14px;
+  color: var(--primary-color);
+}

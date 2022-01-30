@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
 
@@ -8,6 +8,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>camp.in</title>
 
     <link
@@ -16,34 +17,72 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <header class="container">
-      <img src="./assets/images/logo.svg" alt="camp.in" />
+      <img src="./assets/images/logo.svg" alt="Logo do camp.in" />
     </header>
-    <main class="container">
-      <h1 class="style-texts">Faça seu login</h1>
-      <p class="style-texts">Entre com suas informações de cadastro.</p>
 
-      <form class="style-texts">
-        <label for="email" class="email">
-          E-mail:
-          <br />
-          <input type="email" placeholder="Digite seu e-mail" class="email" />
-        </label>
+    <main class="container card">
+      <div class="title-field">
+        <img src="./assets/images/log-in.svg" alt="Ilustração de log-in" />
+        <h1 class="text">Faça seu login</h1>
+      </div>
+      <p class="note">Entre com suas informações de cadastro.</p>
+
+      <form class="text">
+        <label for="email" class="email">E-mail</label>
+        <input
+          type="email"
+          placeholder="Digite seu e-mail"
+          id="mail"
+          class="input-email"
+        />
+
         <br />
-        <label for="password">
-          Senha:
-          <br />
-          <input type="password" placeholder="Digite sua senha" class="pass" />
-        </label>
+
+        <label for="password" class="password">Senha</label>
+        <div class="password-field">
+          <input
+            type="password"
+            name="lock"
+            placeholder="Digite sua senha"
+            id="lock"
+            class="input-password"
+          />
+          <span class="icon-eye">
+            <img src="./assets/images/eye.svg" alt="Ícone de olho" />
+          </span>
+        </div>
+
         <br />
-        <input type="checkbox" name="remember-me" id="" /> Lembre-se
-        <p>Esqueci minha senha</p>
+
+        <div class="user-options">
+          <div>
+            <label for="save-info" class="checkmark-field">
+              <input type="checkbox" name="save-info" id="save-info" />
+              <span class="checkmark"></span>
+              Lembre-me
+            </label>
+          </div>
+
+          <a href="#" class="link">Esqueci minha senha</a>
+        </div>
 
         <button type="submit" class="button">ENTRAR</button>
-        <p class="text-end">Não tem uma conta? <strong>Registre-se</strong></p>
+
+        <p class="register">
+          Não tem uma conta?
+          <a href="#" class="link">Registre-se</a>
+        </p>
       </form>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>

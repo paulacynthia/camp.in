@@ -1,61 +1,233 @@
+/* ========== GLOBAL RESET ========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
+/* ========== VARIABLES ========== */
 :root {
   --text-base: #afb6c2;
   --text-title: #d4ccb6;
   --background: #191816;
   --form-background: #24221f;
   --primary-color: #ffc632;
-  --button-color: rgba(71, 52, 4, 1);
+  --button-color: #473404;
 }
 
-.container {
-  margin-left: 20px;
-}
-
+/* ========== GLOBAL ========== */
 body {
   background-color: var(--background);
+  font-family: "Poppins", sans-serif;
 }
 
 header {
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin: 2.5rem auto 1.875rem;
+}
+
+main {
+  margin: 0 auto;
+}
+
+.container {
+  width: 375px;
+  padding: 0 1.125rem;
 }
 
 h1 {
   font-weight: 600;
+  font-size: 1.5rem;
 }
 
 p {
-  margin-bottom: 27px;
+  margin-bottom: 1.75rem;
 }
 
-.style-texts {
+.text {
   color: var(--text-title);
 }
 
-.pass,
-.email {
-  margin-bottom: 20px;
-  width: 20rem;
-  height: 2rem;
+.note {
+  color: var(--text-base);
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin-top: 0.3125rem;
 }
 
-.button {
+.link {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ========== TITLE FIELD ========== */
+.title-field {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+/* ========== INPUTS ========== */
+.email,
+.password {
+  color: var(--text-base);
+  font-weight: 500;
+}
+
+.input-password,
+.input-email {
+  font-size: 0.875rem;
+  font-family: "Roboto";
+  color: var(--text-base);
+
+  background: transparent;
+
+  width: 100%;
+  height: 2.75rem;
+  padding: 0 2.375rem;
+  margin: 0.25rem 0 1.25rem;
+
+  border: 1px solid #868686;
+  border-radius: 4px;
+}
+
+.input-password::placeholder,
+.input-email::placeholder {
+  font-size: 0.875rem;
+  font-family: "Roboto";
+  color: var(--text-base);
+}
+
+.input-password:focus,
+.input-email:focus {
+  outline: none;
+  border-color: #ffc632;
+  box-shadow: 0px 0px 0px 2px #ffde88;
+}
+
+.password-field {
+  position: relative;
+}
+
+.icon-eye {
+  position: absolute;
+  top: 1rem;
+  right: 0.625rem;
+  cursor: pointer;
+}
+
+/* ===== INPUT ICONS ===== */
+#mail {
+  background-image: url("./assets/images/mail.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+
+#mail:focus {
+  background-image: url("./assets/images/mail-focus.svg");
+}
+
+#lock {
+  background-image: url("./assets/images/lock.svg");
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+}
+
+#lock:focus {
+  background-image: url("./assets/images/lock-focus.svg");
+}
+
+/* ========== USER OPTIONS ========== */
+.user-options {
+  font-size: 0.875rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===== CHECKBOX STYLE ===== */
+.checkmark-field {
+  display: block;
+  position: relative;
+  padding-left: 1.5rem;
+
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: var(--text-base);
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.checkmark-field:hover {
+  color: var(--primary-color);
+}
+
+.checkmark-field input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark-field .checkmark {
+  height: 20px;
+  width: 20px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border: 1px solid #868686;
+  border-radius: 4px;
+}
+
+.checkmark-field:hover .checkmark {
+  border-color: var(--primary-color);
+}
+
+.checkmark-field input:checked ~ .checkmark {
+  background-image: url("./assets/images/check.svg");
   background-color: var(--primary-color);
+  background-position: center;
+  border: none;
+}
+
+/* ========== REGISTER ========== */
+.register {
+  margin-top: 0.875rem;
+
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+/* ========== BUTTON ========== */
+.button {
   color: var(--button-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+
+  background-color: var(--primary-color);
   border: none;
   border-radius: 4px;
-  width: 20rem;
+
+  width: 100%;
+  margin-top: 1.25rem;
   height: 3rem;
+
+  cursor: pointer;
+
+  transition: background-color 0.1s;
 }
 
-.text-end {
-  margin-top: 14px;
+button:hover {
+  background-color: var(--button-color);
   color: var(--primary-color);
 }

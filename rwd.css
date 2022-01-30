@@ -1,0 +1,44 @@
+@media (min-width: 1025px) {
+  /* ========== LOGIN ========== */
+  #login {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  #login > div {
+    flex: 1;
+  }
+
+  #login header {
+    margin: 0;
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+
+  /* ========== CARD ========== */
+  #login .card {
+    background-color: var(--form-background);
+    padding: min(5%, 3.5rem) min(10%, 6.125rem);
+    width: min(80%, 572px);
+    border-radius: 4px;
+  }
+
+  /* ========== ASIDE ========== */
+  #login aside {
+    flex: 1;
+  }
+
+  /* ===== IMAGE ===== */
+  #login aside .img-car {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1441px) {
+  #login aside .img-car {
+    content: url("./assets/images/side-image-2x.jpg");
+  }
+}

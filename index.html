@@ -23,66 +23,87 @@
       href="./assets/images/favicon.ico"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./rwd.css" />
   </head>
   <body>
-    <header class="container">
-      <img src="./assets/images/logo.svg" alt="Logo do camp.in" />
-    </header>
+    <div id="login">
+      <div>
+        <header class="container">
+          <img src="./assets/images/logo.svg" alt="Logo do camp.in" />
+        </header>
 
-    <main class="container card">
-      <div class="title-field">
-        <img src="./assets/images/log-in.svg" alt="Ilustração de log-in" />
-        <h1 class="text">Faça seu login</h1>
-      </div>
-      <p class="note">Entre com suas informações de cadastro.</p>
-
-      <form class="text">
-        <label for="email" class="email">E-mail</label>
-        <input
-          type="email"
-          placeholder="Digite seu e-mail"
-          id="mail"
-          class="input-email"
-        />
-
-        <br />
-
-        <label for="password" class="password">Senha</label>
-        <div class="password-field">
-          <input
-            type="password"
-            name="lock"
-            placeholder="Digite sua senha"
-            id="lock"
-            class="input-password"
-          />
-          <span class="icon-eye">
-            <img src="./assets/images/eye.svg" alt="Ícone de olho" />
-          </span>
-        </div>
-
-        <br />
-
-        <div class="user-options">
-          <div>
-            <label for="save-info" class="checkmark-field">
-              <input type="checkbox" name="save-info" id="save-info" />
-              <span class="checkmark"></span>
-              Lembre-me
-            </label>
+        <main class="container card">
+          <div class="title-field">
+            <img src="./assets/images/log-in.svg" alt="Ilustração de log-in" />
+            <h1 class="text">Faça seu login</h1>
           </div>
+          <p class="note">Entre com suas informações de cadastro.</p>
 
-          <a href="#" class="link">Esqueci minha senha</a>
+          <form class="text">
+            <label for="email" class="email">E-mail</label>
+            <input
+              type="email"
+              placeholder="Digite seu e-mail"
+              id="mail"
+              class="input-email"
+            />
+
+            <br />
+
+            <label for="password" class="password">Senha</label>
+            <div class="password-field">
+              <input
+                type="password"
+                name="lock"
+                placeholder="Digite sua senha"
+                id="lock"
+                class="input-password"
+              />
+              <span class="icon-eye">
+                <img src="./assets/images/eye.svg" alt="Ícone de olho" />
+              </span>
+            </div>
+
+            <br />
+
+            <div class="user-options">
+              <div>
+                <label for="save" class="checkmark-field">
+                  <input
+                    type="checkbox"
+                    name="save"
+                    id="save"
+                    class="input-save"
+                  />
+                  <span class="checkmark"></span>
+                  Lembre-me
+                </label>
+              </div>
+
+              <a href="#" class="link">Esqueci minha senha</a>
+            </div>
+
+            <button type="submit" class="button">ENTRAR</button>
+
+            <p class="register">
+              Não tem uma conta?
+              <a href="#" class="link">Registre-se</a>
+            </p>
+          </form>
+        </main>
+      </div>
+
+      <aside class="container-img">
+        <div class="aside-content">
+          <img
+            class="img-car"
+            src="./assets/images/side-image.jpg"
+            alt="camp.in"
+          />
         </div>
+      </aside>
+    </div>
 
-        <button type="submit" class="button">ENTRAR</button>
-
-        <p class="register">
-          Não tem uma conta?
-          <a href="#" class="link">Registre-se</a>
-        </p>
-      </form>
-    </main>
     <script src="./script.js"></script>
   </body>
 </html>

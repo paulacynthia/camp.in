@@ -58,6 +58,12 @@ p {
   color: var(--primary-color);
   font-weight: 600;
   text-decoration: none;
+
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--text-base);
 }
 
 /* ========== TITLE FIELD ========== */
@@ -67,7 +73,7 @@ p {
   gap: 0.875rem;
 }
 
-/* ========== INPUTS ========== */
+/* ========== EMAIL AND PASSWORD INPUTS ========== */
 .email,
 .password {
   color: var(--text-base);
@@ -167,7 +173,7 @@ p {
   color: var(--primary-color);
 }
 
-.checkmark-field input {
+.checkmark-field .input-save {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -224,10 +230,15 @@ p {
 
   cursor: pointer;
 
-  transition: background-color 0.1s;
+  transition: background-color 0.2s;
 }
 
-button:hover {
+.button:hover {
   background-color: var(--button-color);
   color: var(--primary-color);
+}
+
+/* ========== ASIDE ========== */
+aside .img-car {
+  display: none;
 }
